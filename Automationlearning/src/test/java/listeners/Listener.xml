@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNG listener suite">
+	<listeners>
+		<listener class-name="listeners.Listeners"/>
+	</listeners>
+	<test name="logintest">
+		<classes>
+			<class name="listeners.LoginTest">
+				<methods>
+					<include name="loginByEmail"/>
+					<include name="loginByfacebook"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
